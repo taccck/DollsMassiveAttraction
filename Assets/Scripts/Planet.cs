@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class Planet : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] float GravityRadius = 15f;
     void Start()
     {
-        
+
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+
+    }
+
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.cyan;
+        //Gizmos.DrawWireSphere(transform.position, GravityRadius);
     }
 }
